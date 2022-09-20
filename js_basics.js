@@ -52,6 +52,7 @@ let name = "Hendri Nõmmik"
  console.log(555)
  val = String(555)
  val = String(4+4)
+ console.log(val)
  val = String(5.8)
  // Boolean -> String
  val = String(true)
