@@ -1,70 +1,47 @@
- // variables
-let name = "Hendri Nõmmik"
- name = "New name"
 
- let goodmark = 5
- console.log(goodmark)
- console.log(typeof goodmark)
+ const num1 = 50
+ const num2 = 100
 
- let persent = 50.3
- console.log(persent)
- console.log(typeof persent)
+ let result
+ result = num1 - num2
+ result = num1 * num2
+ result = num1 / num2
+ result = num1 % num2
 
- let ishere = true // false
- console.log(ishere)
- console.log(typeof ishere)
+ result = Math.PI
+ result = Math.round(2.5)
+ result = Math.ceil(2.3)
+ result = Math.floor(2.8)
+ result = Math.sqrt(64)
+ result = Math.abs(-3)
+ result = Math.pow(8, 2)
 
-/* // const
- const surname = "Nõmmik"
+ result = Math.round(Math.random() * 11)
+ console.log(result)
 
- // arrays
- const numbers = [1, 2, 3, 4, 5]
- console.log(numbers)
- numbers.push(6)
- console.log(numbers)
- // objects
- const person = {
-    firstname: "Hendri",
-     surname: "Nõmmik"
- }
- console.log(person)
- console.log(person.firstname)
- console.log(person.surname)
- person.department = "IKT"
- console.log(person)*/
+ const firstname = "hendri"
+ const surname = "nõmmik"
 
- // null
- const airplane = null
- console.log(airplane)
- console.log(typeof airplane)
+ let val = firstname + " " + surname
 
- // Symbol
- const symbol = Symbol()
- console.log(symbol)
- console.log(typeof symbol)
+ val = "hendri "
+ val += surname
 
- // undefined
- let test
- console.log(test)
- console.log(typeof test)
- // Number -> String
- let val
- console.log(555)
- val = String(555)
- val = String(4+4)
- console.log(val)
- val = String(5.8)
- // Boolean -> String
- val = String(true)
- val = String(false)
- // Object -> String
- val = String(new Date())
- // Null -> String
- val = String(null)
-// Array -> String
- val = String([1, 2, 3, 4, 5])
- // Undefined -> String
- val = String(undefined)
- // toString()
- val = (true).toString()
- console.log(val)
+ val = firstname.toUpperCase()
+ val = surname.toLowerCase()
+
+ val = surname[0]
+ val = surname.indexOf("a")
+ val = surname.lastIndexOf("a")
+
+ val = surname.charAt(2)
+ val = surname.charAt(surname.length - 1)
+
+ val = surname.substring(0, 4)
+ val = surname.slice(0, 4)
+
+console.log(val)
+
+ const tags = ["HTML, CS, JS"]
+ val = tags.split(",")
+ console.log(val[1].trim())
