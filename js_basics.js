@@ -1,33 +1,37 @@
+console.log("for loop")
+for (let number = 0; number < 10; number++) {
+    if(number ==5) {
+        // break
+        continue
+    }
+    console.log(number)
+}
+
+console.log("while loop")
+let number1 = 0;
+while (number1 < 10) {
+    console.log(number1)
+    number1++
+}
+
+console.log("do-while loop")
+let number2 = 11;
+do {
+    console.log(number2)
+    number2++
+} while (number2 < 10)
+
+const cars = ["Audi", "Tesla", "BMW"]
+cars.forEach(cars) => {
+    console.log(car)
+}
+
 const person = {
     firstname: "Kadi",
     surname: "Tamm",
-    age: 40,
-    email: "kadi.tamm@gmail.com",
-    hobbies: ["tennis", "korvpall"],
-    address: {
-        city: "Võru",
-        county: "Võrumaa"
-    },
-    getBirthYear: function (){
-        return 2022 - this.age
-    }
+    age: 40
 }
 
-let val
-val = person
-val = person.firstname
-val = person["surname"]
-val = person["hobbies"][1]
-val = person.address["city"]
-val = person.hobbies[0]
-val = person.getBirthYear()
-console.log(val)
-
-
-// for (let i = 0; i < person.hobbies.length; i++){
-//     console.log(person.hobbies[i])
-//}
-person.hobbies.forEach(function(hobbie, index, hobbies){
-    console.log(hobbies + " on element indeksiga " + index)
-    console.log(hobbies)
-})
+for (let personKey in person) {
+    console.log(person[personKey])
+}
