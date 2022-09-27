@@ -1,37 +1,34 @@
-console.log("for loop")
-for (let number = 0; number < 10; number++) {
-    if(number ==5) {
-        // break
-        continue
-    }
-    console.log(number)
-}
+let val;
 
-console.log("while loop")
-let number1 = 0;
-while (number1 < 10) {
-    console.log(number1)
-    number1++
-}
+const list = document.querySelector("ul")
+const listitem = document.querySelector("Li")
 
-console.log("do-while loop")
-let number2 = 11;
-do {
-    console.log(number2)
-    number2++
-} while (number2 < 10)
+console.log(listitem)
 
-const cars = ["Audi", "Tesla", "BMW"]
-cars.forEach(cars) => {
-    console.log(car)
-}
+val = list
+val = list.childNodes
+val = list.childNodes[1]
+val = list.childNodes[1].nodeName
+val = list.childNodes[1].nodeType
 
-const person = {
-    firstname: "Kadi",
-    surname: "Tamm",
-    age: 40
-}
+val = list.children
+val = list.children[1].children
 
-for (let personKey in person) {
-    console.log(person[personKey])
-}
+val = list.firstChild
+val = list.firstElementChild
+
+val = list.lastChild
+val = list.lastElementChild
+
+val = list.childElementCount
+
+val = listitem.parentNode
+val = listitem.parentElement
+val = listitem.parentElement.parentElement
+
+val = listitem.nextSibling
+val = listitem.nextElementSibling
+val = listitem.nextElementSibling
+val = listitem.nextElementSibling.nextElementSibling.previousElementSibling
+
+console.log(val)
