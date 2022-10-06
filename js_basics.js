@@ -2,11 +2,13 @@ const form  = document.querySelector('form')
 const taskInput = document.querySelector('#task')
 const taskList = document.querySelector('ul')
 const delAllTasks = document.querySelector('#del-tasks')
+const filterTasks = document.querySelector('#fil-tasks')
 
 form.addEventListener('submit', addTask)
 taskList.addEventListener('click', deleteTask)
 delAllTasks.addEventListener('click', deleteAllTasks)
 document.addEventListener('DOMContentLoaded', getTasks)
+filterTasks.addEventListener('click', taskFilter)
 
 function addTask(e){
     // create list item
@@ -90,10 +92,16 @@ function getTasks(){
         ul.appendChild(li)
     })
 }
-Footer
-© 2022 GitHub, Inc.
-    Footer navigation
-Terms
-Privacy
-Security
-Status
+
+function taskFilter(){
+    let tasks = document.querySelectorAll('li')
+    let input = document.getElementById("taskfilter").value
+    for (i = 0; i < tasks.length; i++){
+        if (tasks[i].innerText.slice(0, -1).includes(input)){
+            tasks[i].hidden = false
+        }
+        else {
+            tasks[i].hidden = true
+        }
+    }
+}
